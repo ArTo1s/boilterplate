@@ -2,7 +2,7 @@ import React from 'react';
 import style from './style.css';
 import { RouteComponentProps } from 'react-router';
 import { useDispatch, useSelector } from 'react-redux';
-import { useTodoActions, TodoActions } from 'app/actions';
+import { useTodoActions } from 'app/actions';
 import { RootState } from 'app/reducers';
 import { TodoModel } from 'app/models';
 import { Header, TodoList, Footer } from 'app/components';

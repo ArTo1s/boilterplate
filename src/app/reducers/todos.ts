@@ -47,9 +47,9 @@ export const todoReducer = handleActions<RootState.TodoState, TodoModel>(
     },
     [TodoActions.Type.CLEAR_COMPLETED]: (state, action) => {
       return state.filter((todo) => todo.completed === false);
-    }
+    },
     [TodoActions.Type.FETCH]: (state, action) => {
-      console.log('REDUCER ' + action.payload)
+      console.log('REDUCER ' + action.payload);
       return state;
     }
   },
