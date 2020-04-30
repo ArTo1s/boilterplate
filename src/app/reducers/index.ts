@@ -1,9 +1,12 @@
 import { combineReducers } from 'redux';
 import { RootState } from './state';
-import { todoReducer } from './todos';
 
 export { RootState };
 
+function todos(state = '') {
+  return state;
+}
+
 export const rootReducer = combineReducers<RootState>({
-  todos: todoReducer
+  todos,
 });
